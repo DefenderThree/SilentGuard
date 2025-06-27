@@ -1,0 +1,42 @@
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
+export function HeroSection() {
+  return (
+    <section className="container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-32">
+      <div className="space-y-6">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
+          Recupera tu tranquilidad.
+          <br className="hidden md:block" />
+          <span className="text-primary">Dile adiós al spam.</span>
+        </h1>
+        <p className="max-w-[600px] text-lg text-muted-foreground">
+          SilentGuard es tu escudo digital contra llamadas y mensajes no
+          deseados. Bloquea el spam de forma inteligente y protege tu privacidad
+          sin esfuerzo.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button
+            size="lg"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground"
+          >
+            Obtén la App
+          </Button>
+          <Button size="lg" variant="outline">
+            Cómo funciona
+          </Button>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <Image
+          src="https://placehold.co/600x600.png"
+          alt="App Screenshot"
+          width={600}
+          height={600}
+          className="rounded-xl shadow-2xl transition-transform hover:scale-105"
+          data-ai-hint="app interface security"
+        />
+      </div>
+    </section>
+  );
+}
