@@ -5,6 +5,8 @@ import { AboutSection } from "@/components/sections/about-section";
 import { FeaturesSection } from "@/components/sections/features-section";
 import { SpamCheckerSection } from "@/components/sections/spam-checker-section";
 import { DemoSection } from "@/components/sections/demo-section";
+import { OrgChartSection } from "@/components/sections/org-chart-section";
+import { ContactSection } from "@/components/sections/contact-section";
 
 export default function Home() {
   return (
@@ -12,10 +14,12 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <AboutSection />
         <FeaturesSection />
+        <AboutSection />
+        <OrgChartSection />
         <SpamCheckerSection />
         <DemoSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

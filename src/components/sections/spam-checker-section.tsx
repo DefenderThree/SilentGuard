@@ -69,7 +69,7 @@ export function SpamCheckerSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Verifica un Número
+              Verifica un Número al Instante
             </h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
               Ingresa un número de teléfono de 10 dígitos para consultar nuestra
@@ -91,7 +91,7 @@ export function SpamCheckerSection() {
                     name="phoneNumber"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Número de teléfono</FormLabel>
+                        <FormLabel>Número de teléfono (10 dígitos)</FormLabel>
                         <FormControl>
                           <Input placeholder="Ej: 5512345678" {...field} />
                         </FormControl>
@@ -101,13 +101,13 @@ export function SpamCheckerSection() {
                   />
                   <Button
                     type="submit"
-                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                     disabled={isLoading}
                   >
                     {isLoading ? (
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     ) : (
-                      "Verificar Número"
+                      "Verificar Ahora"
                     )}
                   </Button>
                 </form>

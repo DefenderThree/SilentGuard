@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -18,12 +19,13 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground"
+            asChild
+            className="bg-primary hover:bg-primary/90"
           >
-            Obtén la App
+            <Link href="#spam-check">Verificar un número</Link>
           </Button>
-          <Button size="lg" variant="outline">
-            Cómo funciona
+          <Button size="lg" variant="outline" asChild>
+            <Link href="#features">Conocer más</Link>
           </Button>
         </div>
       </div>

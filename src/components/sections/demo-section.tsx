@@ -18,7 +18,7 @@ export function DemoSection() {
         <div className="rounded-[2rem] overflow-hidden w-full h-full bg-secondary">
           <div className="p-4 space-y-4 flex flex-col">
             <Card className="p-2 rounded-lg bg-card self-start max-w-[80%]">
-              <p className="text-xs font-bold text-blue-600 dark:text-blue-400">
+              <p className="text-xs font-bold text-primary">
                 Banco Ficticio
               </p>
               <p className="text-sm">
@@ -32,7 +32,7 @@ export function DemoSection() {
                 Mensaje de SPAM bloqueado. Remitente reportado.
               </p>
             </Card>
-            <Card className="p-2 rounded-lg bg-green-100 dark:bg-green-900/50 self-end max-w-[80%] ml-auto">
+            <Card className="p-2 rounded-lg bg-card self-end max-w-[80%] ml-auto border-green-500/50">
               <p className="text-xs font-bold text-green-600 dark:text-green-400">
                 Mamá
               </p>
