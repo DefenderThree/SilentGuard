@@ -73,12 +73,11 @@ export function AboutSection() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/700x500.png"
+              src="https://www.insperity.com/wp-content/uploads/Team_Gel_1200x630.jpg"
               alt="Nuestro Equipo"
               width={700}
               height={500}
               className="rounded-xl shadow-2xl"
-              data-ai-hint="team brainstorming ideas"
             />
           </div>
         </div>

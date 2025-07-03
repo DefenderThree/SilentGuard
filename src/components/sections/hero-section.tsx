@@ -31,12 +31,11 @@ export function HeroSection() {
       </div>
       <div className="flex justify-center">
         <Image
-          src="https://placehold.co/600x600.png"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjUbFZAIicWdU4Mmsg-gSZBFZ9pzrjDvMyfA&s"
           alt="App Screenshot"
           width={600}
           height={600}
           className="rounded-xl shadow-2xl transition-transform hover:scale-105"
-          data-ai-hint="app interface security"
         />
       </div>
     </section>
